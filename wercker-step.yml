@@ -1,0 +1,23 @@
+name: wercker-bitbucket-download
+version: 0.0.1
+description: download bitbucket file.
+keywords:
+  - bitbucket
+  - oauth
+  - download
+properties:
+  key:
+    type: string
+    required: true
+  secret:
+    type: string
+    required: true
+  source_file:
+    type: string
+    required: true
+  dest_dir:
+    type: string
+    required: true
+  dest_file:
+    type: string
+    required: false
