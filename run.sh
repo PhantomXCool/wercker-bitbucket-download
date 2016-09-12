@@ -101,7 +101,7 @@ for index in "${!file_list[@]}"; do
         fi
     fi
 
-    curl -L "$urlDownload/$out_filename?access_token=$access_token" \
+    curl -L "$urlDownload/$filename?access_token=$access_token" \
     --output "$out_dir/${out_filename}"
 
     echo "file downloaded to $out_dir/${out_filename}"
