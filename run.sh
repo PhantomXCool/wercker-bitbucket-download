@@ -77,7 +77,7 @@ echo "size: ${#file_list[*]}"
 
 echo "download files:"
 
-out_dir="$WERCKER_OUTPUT_DIR/$WERCKER_BITBUCKET_DOWNLOAD_DEST_DIR"
+out_dir="$WERCKER_BITBUCKET_DOWNLOAD_DEST_DIR"
 
 mkdir -p "$out_dir"
 
