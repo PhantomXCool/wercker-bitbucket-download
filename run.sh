@@ -73,7 +73,14 @@ while [[ $response =~ $regex ]];do
     response=${response#*"${BASH_REMATCH[0]}"}
 done
 
-echo "size: ${#file_list[*]}"
+fileListSize=${#file_list[*]}
+
+echo "size: $fileListSize"
+
+if [ "$fileListSize" == "0" ]; then
+    error "Not found files"
+    exit 1
+fi
 
 echo "download files:"
 
